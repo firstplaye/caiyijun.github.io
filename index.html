@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>蔡依君的个人网站</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,20 +22,26 @@
 						<div class="logo">
 							<span class="icon fa-gem"></span>
 						</div>
+						<!-- 语言切换按钮开始 -->
+<div style="position: absolute; top: 30px; right: 40px; z-index: 9999;">
+    <button onclick="switchLang('zh')" style="margin-right:5px;">中文</button>
+    <button onclick="switchLang('en')" style="margin-right:5px;">English</button>
+    <button onclick="switchLang('jp')">日本語</button>
+</div>
+<!-- 语言切换按钮结束 -->
 						<div class="content">
 							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<h1 id="name-title">蔡依君</h1>
+								<p id="major-title">长沙大学 · 数字媒体技术专业<br />
+								求职意向：软件开发</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#intro" id="nav-intro">自我介绍</a></li>
+								<li><a href="#work" id="nav-work">项目</a></li>
+								<li><a href="#about" id="nav-about">证书</a></li>
+								<li><a href="#contact" id="nav-contact">联系我</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -44,58 +50,77 @@
 					<div id="main">
 
 						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-							</article>
+<article id="intro">
+    <h2 class="major" id="intro-title">自我介绍</h2>
+    <span class="image main" style="max-width: 10%;"><img src="images/head.jpg" alt="蔡依君头像" style="width:100%;" /></span>
+    <p id="intro-content">
+        大家好，我叫蔡依君，目前就读于长沙大学数字媒体技术专业。热爱编程与技术，具备良好的学习能力和团队协作精神。希望在软件开发领域找到一份能够发挥所长、不断成长的工作机会。
+    </p>
+</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							</article>
+<!-- Work -->
+<article id="work">
+    <h2 class="major" id="work-title">项目/经历</h2>
+    <h3 id="work-game-title">微信小游戏/小程序开发</h3>
+    <ul id="work-game-list">
+        <li>基于 Cocos Creator 引擎，使用 JavaScript 语言开发微信平台小游戏/小程序。</li>
+        <li>实现核心游戏逻辑、交互设计与界面开发，优化性能以提升用户体验。</li>
+        <li>熟悉微信开发者工具的调试与部署流程，掌握小游戏生命周期管理与资源加载机制。</li>
+        <li>能独立完成前端开发工作，并具备一定的问题排查能力。</li>
+    </ul>
+    <h3 id="work-web-title">Web 前端与全栈开发</h3>
+    <ul id="work-web-list">
+        <li>熟练掌握 HTML5 与 CSS3，能够编写结构清晰、样式美观且响应式兼容良好的网页。</li>
+        <li>掌握 Vue 框架，具备组件化开发能力，能高效构建动态交互式前端页面。</li>
+        <li>熟悉 Node.js 开发，了解其在服务端开发中的应用，能使用其构建基础后端接口与服务。</li>
+        <li>具备完整网站开发能力，能够独立完成从页面搭建到前后端联调的开发流程。</li>
+    </ul>
+</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+<!-- About -->
+<article id="about">
+    <h2 class="major" id="about-title">证书</h2>
+    <ul>
+        <li id="about-desc">我取得了大学英语四级（CET-4）证书和日本语能力测试N2（JLPT N2）证书，以下是我的证书图片：</li>
+    </ul>
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <div>
+            <img src="images/cet4.jpg" alt="CET-4证书"
+                class="zoomable-cert"
+                style="max-width: 200px; width: 100%; cursor: pointer; transition: transform 0.4s cubic-bezier(.4,2,.6,1);"
+                onclick="toggleZoom(this)" />
+            <p style="text-align: center;" id="about-cet4">CET-4</p>
+        </div>
+        <div>
+            <img src="images/jlpt.jpg" alt="JLPT N2证书"
+                class="zoomable-cert"
+                style="max-width: 200px; width: 100%; cursor: pointer; transition: transform 0.4s cubic-bezier(.4,2,.6,1);"
+                onclick="toggleZoom(this)" />
+            <p style="text-align: center;" id="about-jlpt">JLPT N2</p>
+        </div>
+    </div>
+</article>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+<!-- Contact -->
+<article id="contact">
+    <h2 class="major" id="contact-title">联系我</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+        <div style="text-align: center;">
+            <img src="images/wechat_qr.jpg" alt="微信二维码"
+                class="zoomable-cert"
+                style="max-width: 160px; width: 100%; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); cursor: pointer; transition: transform 0.4s cubic-bezier(.4,2,.6,1);"
+                onclick="toggleZoom(this)" />
+            <p style="margin-top: 10px;" id="contact-wechat">微信</p>
+        </div>
+        <div>
+            <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+                <li id="contact-email1"><strong>邮箱1：</strong><a href="mailto:2043885668@qq.com">2043885668@qq.com</a></li>
+                <li id="contact-email2" style="margin-top: 10px;"><strong>邮箱2：</strong><a href="mailto:c20438856688@gmail.com">c20438856688@gmail.com</a></li>
+                <li id="contact-phone" style="margin-top: 10px;"><strong>电话：</strong>13094220067</li>
+            </ul>
+        </div>
+    </div>
+</article>
 
 						<!-- Elements -->
 							<article id="elements">
@@ -342,9 +367,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					<!-- <footer id="footer">
+                        <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                    </footer> -->
 
 			</div>
 
@@ -357,6 +382,236 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- 图片弹窗模态框 -->
+<div id="imgModal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); align-items:center; justify-content:center;">
+    <img id="modalImg" src="" alt="" style="max-width:90vw; max-height:90vh; display:block; margin:auto; box-shadow:0 0 20px #fff;">
+    <p id="modalAlt" style="color:#fff; text-align:center; margin-top:10px;"></p>
+</div>
+<script>
+function showImgModal(src, alt) {
+    const modal = document.getElementById('imgModal');
+    const img = document.getElementById('modalImg');
+    const altText = document.getElementById('modalAlt');
+    img.src = src;
+    altText.textContent = alt || '';
+    modal.style.display = 'flex';
+}
+window.onclick = function(event) {
+    const modal = document.getElementById('imgModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
+window.onkeydown = function(event) {
+    const modal = document.getElementById('imgModal');
+    if (event.key === 'Escape') {
+        modal.style.display = 'none';
+    }
+}
+</script>
+
+<script>
+function toggleZoom(img) {
+    // 如果已放大则缩回，否则放大
+    if (img.classList.contains('zoomed')) {
+        img.classList.remove('zoomed');
+        img.style.position = '';
+        img.style.zIndex = '';
+        img.style.transform = '';
+        img.style.boxShadow = '';
+        document.body.style.overflow = '';
+        // 恢复其它图片点击
+        document.querySelectorAll('.zoomable-cert').forEach(function(other){
+            if(other!==img) other.style.pointerEvents = '';
+        });
+    } else {
+        // 先缩回其它已放大的图片
+        document.querySelectorAll('.zoomable-cert.zoomed').forEach(function(other){
+            other.classList.remove('zoomed');
+            other.style.position = '';
+            other.style.zIndex = '';
+            other.style.transform = '';
+            other.style.boxShadow = '';
+        });
+        // 放大当前图片
+        img.classList.add('zoomed');
+        img.style.position = 'fixed';
+        img.style.left = '50%';
+        img.style.top = '50%';
+        img.style.transform = 'translate(-50%, -50%) scale(2.5)';
+        img.style.zIndex = '10001';
+        img.style.boxShadow = '0 0 40px #fff';
+        document.body.style.overflow = 'hidden';
+        // 禁止其它图片点击
+        document.querySelectorAll('.zoomable-cert').forEach(function(other){
+            if(other!==img) other.style.pointerEvents = 'none';
+        });
+    }
+}
+
+// 按ESC或点击空白处缩回
+document.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){
+        document.querySelectorAll('.zoomable-cert.zoomed').forEach(function(img){
+            img.classList.remove('zoomed');
+            img.style.position = '';
+            img.style.zIndex = '';
+            img.style.transform = '';
+            img.style.boxShadow = '';
+            document.body.style.overflow = '';
+            document.querySelectorAll('.zoomable-cert').forEach(function(other){
+                other.style.pointerEvents = '';
+            });
+        });
+    }
+});
+document.addEventListener('click', function(e){
+    let zoomed = document.querySelector('.zoomable-cert.zoomed');
+    if(zoomed && !zoomed.contains(e.target)){
+        zoomed.classList.remove('zoomed');
+        zoomed.style.position = '';
+        zoomed.style.zIndex = '';
+        zoomed.style.transform = '';
+        zoomed.style.boxShadow = '';
+        document.body.style.overflow = '';
+        document.querySelectorAll('.zoomable-cert').forEach(function(other){
+            other.style.pointerEvents = '';
+        });
+    }
+}, true);
+</script>
+
+<script>
+// 简单的前端多语言切换（仅示例，实际可扩展更多内容）
+const langData = {
+    zh: {
+        name: "蔡依君",
+        major: "长沙大学 · 数字媒体技术专业<br />求职意向：软件开发",
+        nav: ["自我介绍", "项目", "证书", "联系我"],
+        introTitle: "自我介绍",
+        introContent: "大家好，我叫蔡依君，目前就读于长沙大学数字媒体技术专业。热爱编程与技术，具备良好的学习能力和团队协作精神。希望在软件开发领域找到一份能够发挥所长、不断成长的工作机会。",
+        workTitle: "项目/经历",
+        workGameTitle: "微信小游戏/小程序开发",
+        workGameList: [
+            "基于 Cocos Creator 引擎，使用 JavaScript 语言开发微信平台小游戏/小程序。",
+            "实现核心游戏逻辑、交互设计与界面开发，优化性能以提升用户体验。",
+            "熟悉微信开发者工具的调试与部署流程，掌握小游戏生命周期管理与资源加载机制。",
+            "能独立完成前端开发工作，并具备一定的问题排查能力。"
+        ],
+        workWebTitle: "Web 前端与全栈开发",
+        workWebList: [
+            "熟练掌握 HTML5 与 CSS3，能够编写结构清晰、样式美观且响应式兼容良好的网页。",
+            "掌握 Vue 框架，具备组件化开发能力，能高效构建动态交互式前端页面。",
+            "熟悉 Node.js 开发，了解其在服务端开发中的应用，能使用其构建基础后端接口与服务。",
+            "具备完整网站开发能力，能够独立完成从页面搭建到前后端联调的开发流程。"
+        ],
+        aboutTitle: "证书",
+        aboutDesc: "我取得了大学英语四级（CET-4）证书和日本语能力测试N2（JLPT N2）证书，以下是我的证书图片：",
+        aboutCet4: "CET-4",
+        aboutJlpt: "JLPT N2",
+        contactTitle: "联系我",
+        contactWechat: "微信",
+        contactEmail1: "<strong>邮箱1：</strong><a href=\"mailto:2043885668@qq.com\">2043885668@qq.com</a>",
+        contactEmail2: "<strong>邮箱2：</strong><a href=\"mailto:c20438856688@gmail.com\">c20438856688@gmail.com</a>",
+        contactPhone: "<strong>电话：</strong>13094220067"
+    },
+    en: {
+        name: "Yijun Cai",
+        major: "Changsha University · Digital Media Technology<br />Job Objective: Software Development",
+        nav: ["About Me", "Projects", "Certificates", "Contact"],
+        introTitle: "About Me",
+        introContent: "Hello, my name is Yijun Cai. I am currently studying Digital Media Technology at Changsha University. I am passionate about programming and technology, with strong learning and teamwork skills. I hope to find a software development position where I can grow and contribute.",
+        workTitle: "Projects/Experience",
+        workGameTitle: "WeChat Mini Game/App Development",
+        workGameList: [
+            "Developed WeChat mini games/apps using JavaScript and Cocos Creator engine.",
+            "Implemented core game logic, interaction design, and UI development, optimizing performance for better user experience.",
+            "Familiar with WeChat Developer Tools for debugging and deployment, and proficient in mini game lifecycle and resource management.",
+            "Capable of independent frontend development and troubleshooting."
+        ],
+        workWebTitle: "Web Frontend & Full Stack Development",
+        workWebList: [
+            "Proficient in HTML5 and CSS3, able to write well-structured, visually appealing, and responsive web pages.",
+            "Skilled in Vue framework and component-based development for dynamic interactive frontends.",
+            "Familiar with Node.js for backend development and building basic server-side APIs and services.",
+            "Capable of full website development, independently handling everything from page building to frontend-backend integration."
+        ],
+        aboutTitle: "Certificates",
+        aboutDesc: "I have obtained the College English Test Band 4 (CET-4) certificate and the Japanese Language Proficiency Test N2 (JLPT N2) certificate. Here are my certificates:",
+        aboutCet4: "CET-4",
+        aboutJlpt: "JLPT N2",
+        contactTitle: "Contact",
+        contactWechat: "WeChat",
+        contactEmail1: "<strong>Email 1:</strong> <a href=\"mailto:2043885668@qq.com\">2043885668@qq.com</a>",
+        contactEmail2: "<strong>Email 2:</strong> <a href=\"mailto:c20438856688@gmail.com\">c20438856688@gmail.com</a>",
+        contactPhone: "<strong>Phone:</strong> 13094220067"
+    },
+    jp: {
+        name: "蔡依君",
+        major: "長沙大学 · デジタルメディア技術専攻<br />志望職種：ソフトウェア開発",
+        nav: ["自己紹介", "プロジェクト", "資格", "連絡先"],
+        introTitle: "自己紹介",
+        introContent: "こんにちは、蔡依君（さい いくん）と申します。現在、長沙大学でデジタルメディア技術を専攻しています。プログラミングと技術が大好きで、学習能力とチームワークにも自信があります。ソフトウェア開発分野で自分の力を発揮し、成長できる仕事を探しています。",
+        workTitle: "プロジェクト/経験",
+        workGameTitle: "WeChatミニゲーム/ミニアプリ開発",
+        workGameList: [
+            "Cocos CreatorエンジンとJavaScriptを用いてWeChatプラットフォーム向けミニゲーム/ミニアプリを開発。",
+            "ゲームのコアロジック、インタラクション設計、UI開発を担当し、パフォーマンス最適化でユーザー体験を向上。",
+            "WeChat開発者ツールによるデバッグ・デプロイ、ミニゲームのライフサイクル管理やリソースロードに精通。",
+            "フロントエンド開発を独立して完遂し、問題解決能力も備えています。"
+        ],
+        workWebTitle: "Webフロントエンド・フルスタック開発",
+        workWebList: [
+            "HTML5・CSS3に精通し、構造が明確で美しくレスポンシブなWebページを作成可能。",
+            "Vueフレームワークを使ったコンポーネント開発に長け、動的でインタラクティブなフロントエンドを効率的に構築。",
+            "Node.jsによるサーバーサイド開発やAPI構築の経験あり。",
+            "Webサイト全体の開発を一人で完結でき、フロントエンドとバックエンドの連携も対応可能。"
+        ],
+        aboutTitle: "資格",
+        aboutDesc: "大学英語四級（CET-4）と日本語能力試験N2（JLPT N2）を取得しています。以下は私の資格証明書です：",
+        aboutCet4: "CET-4",
+        aboutJlpt: "JLPT N2",
+        contactTitle: "連絡先",
+        contactWechat: "WeChat",
+        contactEmail1: "<strong>メール1：</strong><a href=\"mailto:2043885668@qq.com\">2043885668@qq.com</a>",
+        contactEmail2: "<strong>メール2：</strong><a href=\"mailto:c20438856688@gmail.com\">c20438856688@gmail.com</a>",
+        contactPhone: "<strong>電話：</strong>13094220067"
+    }
+};
+
+function switchLang(lang) {
+    // 顶部
+    document.getElementById('name-title').innerHTML = langData[lang].name;
+    document.getElementById('major-title').innerHTML = langData[lang].major;
+    document.getElementById('nav-intro').innerHTML = langData[lang].nav[0];
+    document.getElementById('nav-work').innerHTML = langData[lang].nav[1];
+    document.getElementById('nav-about').innerHTML = langData[lang].nav[2];
+    document.getElementById('nav-contact').innerHTML = langData[lang].nav[3];
+    // 自我介绍
+    document.getElementById('intro-title').innerHTML = langData[lang].introTitle;
+    document.getElementById('intro-content').innerHTML = langData[lang].introContent;
+    // 项目/经历
+    document.getElementById('work-title').innerHTML = langData[lang].workTitle;
+    document.getElementById('work-game-title').innerHTML = langData[lang].workGameTitle;
+    document.getElementById('work-web-title').innerHTML = langData[lang].workWebTitle;
+    // 项目列表
+    let gameList = document.getElementById('work-game-list');
+    gameList.innerHTML = langData[lang].workGameList.map(item => `<li>${item}</li>`).join('');
+    let webList = document.getElementById('work-web-list');
+    webList.innerHTML = langData[lang].workWebList.map(item => `<li>${item}</li>`).join('');
+    // 证书
+    document.getElementById('about-title').innerHTML = langData[lang].aboutTitle;
+    document.getElementById('about-desc').innerHTML = langData[lang].aboutDesc;
+    document.getElementById('about-cet4').innerHTML = langData[lang].aboutCet4;
+    document.getElementById('about-jlpt').innerHTML = langData[lang].aboutJlpt;
+    // 联系我
+    document.getElementById('contact-title').innerHTML = langData[lang].contactTitle;
+    document.getElementById('contact-wechat').innerHTML = langData[lang].contactWechat;
+    document.getElementById('contact-email1').innerHTML = langData[lang].contactEmail1;
+    document.getElementById('contact-email2').innerHTML = langData[lang].contactEmail2;
+    document.getElementById('contact-phone').innerHTML = langData[lang].contactPhone;
+}
+</script>
 
 	</body>
 </html>
